@@ -1,0 +1,20 @@
+In A-Frame, there are 5 types of lights available:
+
+1. Ambient Light: This light source spreads lights in every direction evenly over the scene affecting all the entities in the scene.
+
+2. Hemispherical Light: Being similar to the ambient light, this light source also affects all the objects entirely in the scene. In this light, there are two different colors (attribute “color” and “groundColor”), one from the top and one from the bottom.
+
+3. Point Light: This light source is only limited to a point and spreads light in all directions from the point. For example, a bulb or candle. The closer the light is to the object, the more you can see the object.
+
+4. Spot Light: This light source starts from a point and emits light in one direction in the form of a cone like a torch. Spot Light needs a target on which it can fall.
+
+5. Directional Light: This light source is one that is located very far away like a sun, emitting light in a particular direction.
+
+
+type: type of light(ambient/directional etc)
+distance: where the intensity becomes zero that means the light will end there
+decay: the amount of light that starts dim along with the distance
+
+Among all the lights in A-Frame, only Point light, Spot light, and Directional light can cast shadows of the objects present in the scene.
+
+There must be at least one entity in the scene to receive the shadow. Let’s add the circular plane and set the shadow=”receive:true”.
