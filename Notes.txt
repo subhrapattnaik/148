@@ -45,7 +45,7 @@ distance: 50 (where the intensity becomes zero, that means the light will end th
 decay: 2 (amount of light that starts dim along the distance) color:green
 position=”-100 18 20”
 
------------
+------------------------------------------------------
 
 We can set the attribute
 “castShadow:true” in the light
@@ -55,8 +55,13 @@ component to see the shadow.
 shadow=”cast:true” for the gLTF model also.
 
 -----------
+for light and animal ,we need to add some changes for cast shadow
 
---------------------------------------------
+----------
+There must be at least one entity in the scene to receive the shadow.
+Let’s add the circular plane and set the shadow=”receive:true”.
+Set the attributes position, rotation, radius, color and visible for the circular ground to set its orientation.
+--------------------------------------------------
 
 
 3D models are created via specialized software by 3D artists or 3D modelers
