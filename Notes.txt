@@ -18,3 +18,48 @@ decay: the amount of light that starts dim along with the distance
 Among all the lights in A-Frame, only Point light, Spot light, and Directional light can cast shadows of the objects present in the scene.
 
 There must be at least one entity in the scene to receive the shadow. Let’s add the circular plane and set the shadow=”receive:true”.
+
+
+
+
+
+--------------------------------------------
+
+
+3D models are created via specialized software by 3D artists or 3D modelers
+
+3D models are stored in the form of polygons, for example, a set of triangles, which is called a mesh.
+This information can be stored in the form of vertices, edges or faces depending on the application.
+
+
+o store 3D models, the file formats used are .obj, .fbx, .gltf(or .glb) etc.
+
+We are going to use gLTF 3D models in A-Frame.
+gLTF stands for Graphics Language Transmission Format.
+It is a standard file format for 3D models and scenes.
+
+-----------------------------------------------
+
+Asset Management in A-Frame.
+
+
+A-Frame also has its assets management system, which helps to load all the assets like 3D models, image textures, video textures and audio before rendering anything in the scene.
+
+Assets can be used directly, the way we have been using till now, thus for better 3D experience and games, it is better to preload all the assets.
+
+ <a-assets> tag inside the <a-scene> tag.
+ 
+ n A-Frame assets can be added under <a-assets>
+And Assets can be:
+<a-asset-item> - Miscellaneous assets like 3D models.
+<audio> - Sound files
+<img> - Image textures <video> - Video textures
+
+-----------------------------------------------
+download the gLTF models of a few wild animals for Mike to capture good photographs.
+
+reate a free account on sketchfab.com by using google
+
+
+
+ 
